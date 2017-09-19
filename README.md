@@ -354,7 +354,7 @@ public void onCreate(Bundle b) {
 The response can be provided to the AuthState instance for easy persistence
 and further processing:
 
-```
+```java
 authState.update(resp, ex);
 ```
 
@@ -402,7 +402,7 @@ server. This can be done directly, by extracting the access token from a
 token response. However, in most cases, it is simpler to use the
 `performActionWithFreshTokens` utility method provided by AuthState:
 
-```
+```java
 authState.performActionWithFreshTokens(service, new AuthStateAction() {
   @Override public void execute(
       String accessToken,
